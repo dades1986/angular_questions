@@ -175,9 +175,55 @@ The Angular date filter is a built-in filter that formats dates according to the
 
 ### 21. What is the inbuilt Angular Json filter?
 The inbuilt Angular JSON filter is used to format JSON objects for display in the view. It converts JavaScript objects or arrays into JSON strings, making them human-readable.
+```
+<!-- Example of using the inbuilt Angular JSON filter -->
+<div ng-app="">
+  <p>{{ { "name": "John", "age": 30 } | json }}</p>
+</div>
+```
+
 
 ### 22. What is the limitTo Angular filter?
 The limitTo Angular filter is used to limit the number of items displayed in an array or string. It takes a numeric argument to specify the maximum number of items to display.
+```
+<div ng-app="">
+  <h2>Original Array:</h2>
+  <ul>
+    <li ng-repeat="number in [1, 2, 3, 4, 5]">{{ number }}</li>
+  </ul>
+  
+  <h2>Limiting Array to First 3 Items:</h2>
+  <ul>
+    <li ng-repeat="number in [1, 2, 3, 4, 5] | limitTo:3">{{ number }}</li>
+  </ul>
+</div>
+```
+----------------------------
+```
+<body>
+
+<div ng-app="limitToExample" ng-controller="LimitToController">
+  <h2>Original Array:</h2>
+  <ul>
+    <li ng-repeat="item in items">{{ item }}</li>
+  </ul>
+  
+  <h2>Limiting Array to First 3 Items:</h2>
+  <ul>
+    <li ng-repeat="item in items | limitTo:3">{{ item }}</li>
+  </ul>
+</div>
+
+<script>
+  angular.module('limitToExample', [])
+  .controller('LimitToController', function($scope) {
+    $scope.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  });
+</script>
+
+</body>
+```
+----------------------------
 
 ### 23. What is the lowercase Angular filter?
 The lowercase Angular filter is used to convert a string to lowercase format in the view. It transforms all characters of the string to lowercase letters.
