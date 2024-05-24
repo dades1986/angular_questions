@@ -19,6 +19,10 @@ To be aware that TypeScript and Angular Command Line Interface knowledge is also
 
 # 3. Which soft skills do Angular developers need?
 
+Some of the crucial soft skills required to be a skilled Angular developer include empathy, 
+time management, communication, and attention to detail.
+Teamwork is also vital for Angular developers
+
 # 4. Explain the kind of data binding that Angular deploys.
 
 # 5. Explain how Angular is different from AngularJS.
@@ -37,6 +41,89 @@ To be aware that TypeScript and Angular Command Line Interface knowledge is also
 
 
 # 6. Explain what a decorator is in Angular.
+
+
+In Angular, a decorator is a special kind of declaration that can be attached to a :
+   - class
+   -  method
+   -  property
+   -  or parameter
+
+   Decorators provide a way to add metadata to these structures, which can then be used by Angular to configure and enhance their behavior.
+
+   Decorators are extensively used in Angular to define various aspects of components, directives, services, and other building blocks of an Angular application.
+
+1. Syntax:
+   - Decorators are denoted by the '@' symbol followed by an identifier.
+   - Examples: @Component, @Directive, @Injectable, etc.
+
+2. Metadata:
+   - Decorators attach metadata to classes, methods, properties, or parameters.
+   - This metadata provides information to Angular about how to process and use the associated structure.
+
+3. Role in Angular:
+   - Decorators are crucial for Angular's:
+        - dependency injection system
+        - template compilation
+        - and component lifecycle management.
+   - They define :
+     - component metadata
+      -  inject dependencies
+      -  specify template and style information
+      -   handle events
+      -    etc.
+
+4. Built-in Decorators:
+   - Angular provides built-in decorators such as:
+    
+**_1. __@NgModule__: Defines and configures Angular modules.
+
+2. __@Component__: Defines a component along with its metadata.
+
+3. __@Directive__: Declares a directive along with its metadata.
+
+4. __@Pipe__: Marks a class as a pipe for transforming data within a template.
+
+5. __@Injectable__: Marks a class as available to the Angular dependency injection system.
+
+6. __@Input__: Defines an input property for a component or directive.
+
+7. __@Output__: Defines an output property for a component or directive.
+
+8. __@HostBinding__: Binds a host element property to a directive or component property.
+
+9. __@HostListener__: Listens to events on the host element of the directive or component.
+
+10. __@ViewChild__: Queries a single child component, directive, or element within the view of a component.
+
+11. __@ViewChildren__: Queries multiple child components, directives, or elements within the view of a component.
+
+12.__@ContentChild__: Queries a single projected content child within the host component.
+
+13. __@ContentChildren__: Queries multiple projected content children within the host component.
+
+14. __@Host__: Defines that a directive should inject the host element.
+
+15. __@Self__: Restricts the scope of a dependency resolution to a single element.
+
+16. __@SkipSelf__: Skips the current element and tries to resolve a dependency from a parent element.
+
+17. __@Optional__: Specifies that a dependency is optional during injection.
+
+18. __@Attribute__: Injects an attribute value from the host element.
+
+19. __@NgModuleRef__: Injects a reference to the current NgModule.
+
+20. __@ComponentRef__: Injects a reference to the current component.
+
+21. __@PipeMetadata__: Injects metadata about the pipe being instantiated._**
+
+
+5. Custom Decorators:
+   - Custom decorators can be created to encapsulate reusable behavior or apply additional logic to classes, methods, or properties.
+
+6. Use Cases:
+   - Decorators are extensively used in Angular applications for defining component and directive metadata, configuring dependency injection, applying styles and templates, handling events, etc.
 
 # 7.Describe some benefits of using Angular.
 
@@ -92,4 +179,8 @@ To be aware that TypeScript and Angular Command Line Interface knowledge is also
 
 # 33. Architecture of an Angular application, services, and dependency injection
 ![image](https://github.com/dades1986/angular_questions/assets/29290099/59b21f7b-cf7d-4a95-a763-2e1d32d7afd8)
+
+# 34. Describe some benefits of using Angular.
+We should know that Angular’s strength is that it enables developers to write clean code that’s easy to maintain.
+We should be aware that Angular provides reusable components and data binding and offers modules that make application creation smoother.
 
