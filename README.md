@@ -227,6 +227,7 @@ The limitTo Angular filter is used to limit the number of items displayed in an 
 
 ### 23. What is the lowercase Angular filter?
 The lowercase Angular filter is used to convert a string to lowercase format in the view. It transforms all characters of the string to lowercase letters.
+{{ lowercase_expression | lowercase}}  In JavaScript  $filter('lowercase')()
 
 ### 24. Explain what view encapsulation is in Angular.
 View encapsulation in Angular refers to the mechanism of isolating styles defined in a component's template from affecting other components. It ensures that styles are scoped to the component, preventing unintended style leakage.
