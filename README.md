@@ -264,7 +264,7 @@ jQuery is a JavaScript library primarily focused on DOM manipulation and simplif
 We should know that Angular’s strength is that it enables developers to write clean code that’s easy to maintain.
 We should be aware that Angular provides reusable components and data binding and offers modules that make application creation smoother.
 
-# 34.  Angular @HostListener Examples
+# 35.  Angular @HostListener Examples
 
 In Angular, the `@HostListener` decorator is used to listen for events on the host element or its ancestors. Here are some examples of event bindings that you can use with `@HostListener`:
 
@@ -296,7 +296,7 @@ In Angular, the `@HostListener` decorator is used to listen for events on the ho
 
 These are just a few examples. You can bind to almost any DOM event using `@HostListener` in Angular. If you need to listen for an event that's not listed here, you can specify its name directly. For example, `'wheel'`, `'contextmenu'`, `'touchstart'`, etc.
 
-# 35.  Angular Inbuilt Modules
+# 36.  Angular Inbuilt Modules
 
 Below is a list of commonly used Angular inbuilt modules along with brief descriptions:
 
@@ -322,7 +322,7 @@ Below is a list of commonly used Angular inbuilt modules along with brief descri
 
 These are some of the most commonly used Angular inbuilt modules. Depending on the requirements of your application, you may need additional modules beyond these basics.
 
-# 36.  NgModule in Angular
+# 37.  NgModule in Angular
 
 ## What is NgModule?
 
@@ -378,3 +378,10 @@ import { MyPipe } from './my.pipe';
   bootstrap: []
 })
 export class MyModule { }
+```
+# 38.  NgModule in Angular
+
+If you can't find app.module.ts after creating a new Angular project,
+it's possible that you might have created an Angular standalone project. 
+Angular 15 introduced the concept of standalone components, 
+which can be used without the traditional module system.
