@@ -264,3 +264,36 @@ jQuery is a JavaScript library primarily focused on DOM manipulation and simplif
 We should know that Angular’s strength is that it enables developers to write clean code that’s easy to maintain.
 We should be aware that Angular provides reusable components and data binding and offers modules that make application creation smoother.
 
+# 34.  Angular @HostListener Examples
+
+In Angular, the `@HostListener` decorator is used to listen for events on the host element or its ancestors. Here are some examples of event bindings that you can use with `@HostListener`:
+
+1. **Mouse Events**:
+   - `'click'`: Triggered when the element is clicked.
+   - `'dblclick'`: Triggered when the element is double-clicked.
+   - `'mouseover'`: Triggered when the mouse pointer enters the element.
+   - `'mouseout'`: Triggered when the mouse pointer leaves the element.
+   - `'mousemove'`: Triggered when the mouse pointer is moved over the element.
+
+2. **Keyboard Events**:
+   - `'keydown'`: Triggered when a key is pressed down.
+   - `'keyup'`: Triggered when a key is released.
+   - `'keypress'`: Triggered when a key is pressed and released.
+
+3. **Form Events**:
+   - `'submit'`: Triggered when a form is submitted.
+   - `'focus'`: Triggered when the element receives focus.
+   - `'blur'`: Triggered when the element loses focus.
+   - `'input'`: Triggered when the value of an input element changes.
+
+4. **Window Events**:
+   - `'scroll'`: Triggered when the window is scrolled.
+   - `'resize'`: Triggered when the window is resized.
+   - `'load'`: Triggered when the window and its resources are fully loaded.
+
+5. **Custom Events**:
+   - You can define and trigger custom events specific to your application.
+
+These are just a few examples. You can bind to almost any DOM event using `@HostListener` in Angular. If you need to listen for an event that's not listed here, you can specify its name directly. For example, `'wheel'`, `'contextmenu'`, `'touchstart'`, etc.
+
+
