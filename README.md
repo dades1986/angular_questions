@@ -322,3 +322,59 @@ Below is a list of commonly used Angular inbuilt modules along with brief descri
 
 These are some of the most commonly used Angular inbuilt modules. Depending on the requirements of your application, you may need additional modules beyond these basics.
 
+# 36.  NgModule in Angular
+
+## What is NgModule?
+
+NgModule (Angular Module) is a fundamental building block of an Angular application. It is a class decorated with the @NgModule decorator, which takes a metadata object that describes how to compile a component's template and how to create an injector at runtime.
+
+## Features of NgModule:
+
+- **Declarations**: List of components, directives, and pipes that belong to this NgModule.
+  
+- **Imports**: List of other modules whose exported components, directives, and pipes are needed by the components in this NgModule.
+
+- **Exports**: List of components, directives, and pipes that can be used by the components of other NgModules.
+
+- **Providers**: List of services that the injector can provide to the components in this NgModule.
+
+- **Bootstrap**: Main application view, called the root component, that hosts all other app views. Only the root NgModule should set the bootstrap property.
+
+## Why Use NgModule?
+
+- **Modularity**: Helps in organizing the application into cohesive blocks of functionality.
+
+- **Encapsulation**: Defines clear boundaries for components, directives, and pipes, preventing accidental conflicts and making it easier to manage dependencies.
+
+- **Reusability**: Encourages code reuse by making components, directives, and pipes available to other parts of the application or to external applications.
+
+## Example Usage:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { MyComponent } from './my.component';
+import { MyDirective } from './my.directive';
+import { MyPipe } from './my.pipe';
+
+@NgModule({
+  declarations: [
+    MyComponent,
+    MyDirective,
+    MyPipe
+  ],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
+  exports: [
+    MyComponent,
+    MyDirective,
+    MyPipe
+  ],
+  providers: [],
+  bootstrap: []
+})
+export class MyModule { }
