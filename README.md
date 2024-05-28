@@ -296,4 +296,29 @@ In Angular, the `@HostListener` decorator is used to listen for events on the ho
 
 These are just a few examples. You can bind to almost any DOM event using `@HostListener` in Angular. If you need to listen for an event that's not listed here, you can specify its name directly. For example, `'wheel'`, `'contextmenu'`, `'touchstart'`, etc.
 
+# 35.  Angular Inbuilt Modules
+
+Below is a list of commonly used Angular inbuilt modules along with brief descriptions:
+
+1. **CommonModule**: Provides commonly used directives like ngIf, ngFor, etc., and exports CommonModule for use in feature modules.
+
+2. **FormsModule**: Provides two-way data binding, ngModel directive, and other form-related directives and services.
+
+3. **ReactiveFormsModule**: Provides support for reactive forms, form validation, form groups, form controls, and form builders.
+
+4. **HttpClientModule**: Provides HttpClient for making HTTP requests and interacting with APIs.
+
+5. **RouterModule**: Provides routing and navigation support for Angular applications.
+
+6. **BrowserModule**: The root module that sets up the basic environment for running an Angular application in a web browser.
+
+7. **HttpModule (Deprecated)**: An older HTTP module for making HTTP requests, now replaced by HttpClientModule.
+
+8. **RouterModule.forRoot()**: A method to configure the router at the application's root level.
+
+9. **RouterModule.forChild()**: A method to configure additional feature modules with routes.
+
+10. **BrowserAnimationsModule**: Provides support for Angular animations when running applications in the browser.
+
+These are some of the most commonly used Angular inbuilt modules. Depending on the requirements of your application, you may need additional modules beyond these basics.
 
